@@ -30,7 +30,17 @@ namespace ContactBook_WPF
 
         }
 
-        private void btnContactsSettings_Click(object sender, RoutedEventArgs e)
+        private void btnGlobalSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEditContact_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnContactSettings_Click(object sender, RoutedEventArgs e)
         {
 
         }
