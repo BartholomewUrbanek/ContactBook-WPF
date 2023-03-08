@@ -10,25 +10,30 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="6*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="4*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="20" />
+            <RowDefinition Height="0" />
         </Grid.RowDefinitions>
         
         <Rectangle Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="200" 
                    Fill="AliceBlue"/>
-        <Rectangle Grid.Column="2" Grid.RowSpan="200"
-                   Fill="RoyalBlue"/>
+        <Rectangle Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="200"
+                   Fill="LightSteelBlue"/>
 
-        <TextBlock Grid.Column="0" Grid.Row="1" Margin= "10,0,0,10" 
-                   Name="txtSearch" Text ="Contacts" FontSize="20" 
+        <TextBlock Grid.Column="0" Grid.Row="1" Margin= "10,10,0,10" 
+                   Name="txtSearch" Text ="Contacts" FontSize="30" 
                    FontFamily="Microsoft Sans Serif" />
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1"
@@ -48,14 +53,82 @@
                 <Image Source="C:\Users\Finik\source\WPF\ContactBook-WPF\ContactBook-WPF\Icons\icons8_Settings.ico" />
             </Button>
         </StackPanel>
-        
-        
 
-
-        
         <TextBox Grid.Column="0" Grid.Row="2" Margin ="10,10,10,10"
                  Grid.ColumnSpan="2"
                  Text="Search">
         </TextBox>
+
+        <ScrollViewer Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"
+                      Grid.RowSpan="200">
+            <StackPanel>
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+                <TextBlock FontSize="30" HorizontalAlignment="Left"
+                       Margin="10,5,0,0" Text="Sample Contact" />
+            </StackPanel>
+        </ScrollViewer>
+
+        <Ellipse Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"
+                 Height="100" Width="100" HorizontalAlignment="Center">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="C:\Users\Finik\source\WPF\ContactBook-WPF\ContactBook-WPF\Photos\photo_holder.jpg"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="3" Grid.Row="1"
+                    HorizontalAlignment="Right">
+            <Button Margin="0,5,5,10" Height="30" Width="30" 
+                    Background="LightSteelBlue">
+                <Image Source="C:\Users\Finik\source\WPF\ContactBook-WPF\ContactBook-WPF\Icons\icons8_edit.ico" />
+            </Button>
+            <Button Margin="0,5,10,10" Height="30" Width="30"
+                    Background="LightSteelBlue">
+                <Image Source="C:\Users\Finik\source\WPF\ContactBook-WPF\ContactBook-WPF\Icons\icons8_menu.ico" />
+            </Button>
+        </StackPanel>
+
+        <TextBlock Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left"
+                   Margin="10,5,0,5" FontSize="30" FontWeight="SemiBold"
+                   Text="Sample"></TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="2" HorizontalAlignment="Left"
+                   Margin="10,0,0,5" FontSize="30" FontWeight="SemiBold"
+                   Text="Contact"></TextBlock>
+       
+        <TextBlock Grid.Column="2" Grid.Row="3" 
+                   Margin="20,50,0,0" FontSize="20"                   
+                   Text="Phone number"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="4" 
+                   Margin="20,30,0,0" FontSize="20"                   
+                   Text="Email adress"></TextBlock>
+        <TextBlock Grid.Column="2" Grid.Row="5" 
+                   Margin="20,30,0,0" FontSize="20"                   
+                   Text="Address"></TextBlock>
+
+        <TextBlock Grid.Column="3" Grid.Row="3"
+                   Margin="30,50,0,0" FontSize="20"                   
+                   Text="NumberPlaceHolder"></TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="4" 
+                   Margin="30,30,0,0" FontSize="20"                   
+                   Text="EmailPlaceHolder"></TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="5" Grid.RowSpan="2"
+                   Margin="30,30,0,0" FontSize="20"
+                   Text="AddressPlaceHolder1&#x0a;AddressPlaceHolder2"/>
     </Grid>
 </Window>
